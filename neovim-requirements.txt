@@ -1,0 +1,10 @@
+cargo
+curl
+fd
+lua51
+luarocks
+ripgrep
+tar
+tree-sitter-cli
+unzip
+zip
