@@ -14,14 +14,30 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				automatic_enable = {
-					exclude = {},
+					exclude = {
+						"ts_ls",
+					},
 				},
 
 				ensure_installed = {
 					"bashls", -- bash lsp
 					"stylua", -- For format lua files
+					"pyright",
+					"ts_ls",
 				},
 			})
+		end,
+	},
+	{
+		"pmizio/typescript-tools.nvim",
+		ft = {
+			"typescript",
+			"typescriptreact",
+			"javascript",
+			"javascriptreact",
+		},
+		config = function()
+			require("typescript-tools").setup({})
 		end,
 	},
 }
