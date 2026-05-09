@@ -30,12 +30,12 @@ return {
 	},
 	{
 		"pmizio/typescript-tools.nvim",
-		ft = {
-			"typescript",
-			"typescriptreact",
-			"javascript",
-			"javascriptreact",
-		},
+		-- ft = {
+		-- 	"typescript",
+		-- 	"typescriptreact",
+		-- 	"javascript",
+		-- 	"javascriptreact",
+		-- },
 		config = function()
 			require("typescript-tools").setup({})
 		end,
